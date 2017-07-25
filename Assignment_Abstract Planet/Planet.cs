@@ -7,7 +7,7 @@ using System.Threading.Tasks;
  * Name: Robin singh
  * Date: July 12, 2017
  * Description: This is the abstract class of planet
- * Version: 0.1- Created planet class
+ * Version: 0.2- Created Constructor and public override
  */
 namespace Assignment_Abstract_Planet
 {
@@ -109,5 +109,31 @@ namespace Assignment_Abstract_Planet
             }
 
         }
-    }
+        //
+        //CONSTRUCTOR
+         
+        public Planet(string name,double diameter, double mass)
+        {
+            this._name = name;
+            this._diameter = diameter;
+            this._mass = mass;
+        }
+
+        // PUBLIC OVERRIDE METHODS
+
+        /// <SUMMARY>
+        /// OVERRIDDEN THE BUILT-IN ToString Method
+        /// </SUMMARY>
+        /// <return>
+        /// string
+        /// </return>
+
+        public override string ToString()
+        {
+            string outputString = "";
+
+            outputString = "Name" + Name + "\n" + "Diameter" + Diameter + "/n" + "Mass" + Mass + "/n";
+            return outputString;
+        }
+      }
     }
