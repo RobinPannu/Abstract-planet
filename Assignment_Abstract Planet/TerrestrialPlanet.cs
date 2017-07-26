@@ -8,7 +8,7 @@ using System.Threading.Tasks;
  * Name: Robin singh
  * Date: July 12, 2017
  * Description: This is the abstract class of TerrestialPlanet
- * Version: 0.1- Created PRIVATE INSTANCE VARIABLES and MAIN CONSTRUCTOR   
+ * Version: 0.2- Created PUBLIC METHOD  CLASS   
  */
 namespace Assignment_Abstract_Planet
 {
@@ -31,6 +31,23 @@ namespace Assignment_Abstract_Planet
                 : base(name, diameter, mass)
         {
             this._oxygen = oxygen;
+        }
+        //PUBLIC METHODS
+        public bool HasMoons()
+        {
+            if (MoonCount > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool Habitable()
+        {
+            return _oxygen;
         }
     }
 }
