@@ -8,7 +8,7 @@ using System.Threading.Tasks;
  * Name: Robin singh
  * Date: July 12, 2017
  * Description: This is the abstract class of GiantPlanet
- * Version: 0.1- Created PRIVATE INSTANCE VARIABLES and CONSTRUCTOR CLASS
+ * Version: 0.2- Created PUBLIC METHOD CLASS Contain HasMoon and HasRing
  */
 namespace Assignment_Abstract_Planet
 {
@@ -20,7 +20,7 @@ namespace Assignment_Abstract_Planet
         //CONSTRUCTOR
 
         /// <summary>
-        /// This is the main constructor for the GiantPlanet class.
+        /// This is the main CONSTRUCTOR for the class GiantPlanet.
         /// It takes four parameters - name(string) - diameter(double) - mass(double) - type(string).
         /// </summary>
         /// <param name="name"></param>
@@ -33,7 +33,32 @@ namespace Assignment_Abstract_Planet
             this._type = type;
         }
 
-        
+
+        //PUBLIC METHODS
+        public bool HasMoons()
+        {
+            if (MoonCount > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool HasRings()
+        {
+            if (RingCount > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
 
     }
 }
