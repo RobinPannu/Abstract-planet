@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 /*
  * Name: Robin singh
  * Date: July 27 , 2017
- * Description: This is the abstract class of TerrestialPlanet
- * Version: 0.2- Created PUBLIC METHOD  CLASS   
+ * Description: This is the abstract class of TerrestialPlanet that extended the planet abstract class
+ * Version: 0.3-Implemented IHasMoons and IHabitable
  */
 namespace Assignment_Abstract_Planet
 {
-    class TerrestrialPlanet : Planet
+    class TerrestrialPlanet : Planet,IHasMoons,IHabitable
     {
         // PRIVATE INSTANCE VARIABLES (FIELDS)
         private bool _oxygen;
