@@ -7,12 +7,14 @@ using System.Threading.Tasks;
 /*
  * Name: Robin singh
  * Date: July 12, 2017
- * Description: This is the abstract class of GiantPlanet
- * Version: 0.2- Created PUBLIC METHOD CLASS Contain HasMoon and HasRing
+ * Description: This is the abstract class of GiantPlanet that extended the planet abstract class
+ * implement the IHasMoons and IHasRings
+ * Version: 0.2- Implemented IHasMoons and IHasRings
  */
 namespace Assignment_Abstract_Planet
+
 {
-    class GiantPlanet : Planet
+    class GiantPlanet : Planet,IHasMoons,IHasRings
     { // PRIVATE INSTANCE VARIABLES (FIELDS)
         private string _type;
 
